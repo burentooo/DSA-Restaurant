@@ -157,8 +157,6 @@ c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\kb
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\ji2b4vgiux-{0}-13ja33weya-13ja33weya.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\tefv0zeckk-{0}-j8lzlu28q6-j8lzlu28q6.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\knsgek38oy-{0}-u1n4jc5v46-u1n4jc5v46.gz
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\fe95vulehx-{0}-jkf4p8v2dn-jkf4p8v2dn.gz
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\e76fe7a2nx-{0}-jkf4p8v2dn-jkf4p8v2dn.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\staticwebassets.build.json
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\staticwebassets.build.json.cache
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\staticwebassets.development.json
@@ -169,3 +167,6 @@ c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\refint\Blazor
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\BlazorApp1.pdb
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\BlazorApp1.genruntimeconfig.cache
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\ref\BlazorApp1.dll
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\fe95vulehx-{0}-e4hbzpjloh-e4hbzpjloh.gz
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\e76fe7a2nx-{0}-e4hbzpjloh-e4hbzpjloh.gz
