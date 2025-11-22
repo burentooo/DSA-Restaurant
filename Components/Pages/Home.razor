@@ -2,47 +2,7 @@
 @rendermode InteractiveServer
 <PageTitle>Home</PageTitle>
 
-<h1>Menu</h1>
-
-<div class="image-container">
-
-    @foreach (Product item in Products)
-    {
-        <div class="item-card">
-            <img src="@item.Image" alt="@item.Name">
-
-            <div class="item-info">
-                <h3>@item.Name</h3>
-
-                <div class="qty-control">
-                    <button type="button" @onclick="() => Decrease(item)">-</button>
-                    <span>@item.Quantity</span>
-                    <button type="button" @onclick="() => Increase(item)">+</button>
-                </div>
-
-                <button type="button" class="add-btn">ADD</button>
-            </div>
-        </div>
-    }
-
+<div class="background-image">
+    <img src="images\background.png" alt="">
 </div>
 
-@code {
-    private List<Product> Products = new List<Product>()
-    {
-        new Product { Name = "Chicken", Image = "images/Chicken.png" },
-        new Product { Name = "Burger", Image = "images/burgir.jpeg" },
-        new Product { Name = "Fries", Image = "images/fries.png" }
-    };
-
-    private void Increase(Product p)
-    {
-        p.Quantity++;
-    }
-
-    private void Decrease(Product p)
-    {
-        if (p.Quantity > 1)
-            p.Quantity--;
-    }
-}

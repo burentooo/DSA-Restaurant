@@ -6,6 +6,7 @@
 
 main[b-j65y7q72mt] {
     flex: 1;
+    overflow-x: hidden;
 }
 
 .sidebar[b-j65y7q72mt] {
@@ -70,7 +71,7 @@ main[b-j65y7q72mt] {
         width: 0;
     }
 
-    .top-row[b-j65y7q72mt], article[b-j65y7q72mt] {
+    .top-row[b-j65y7q72mt]{
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
@@ -84,7 +85,7 @@ main[b-j65y7q72mt] {
     box-sizing: border-box;
     display: none;
     left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    
     position: fixed;
     width: 100%;
     z-index: 1000;

@@ -109,7 +109,6 @@ c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Com
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\bundle\BlazorApp1.styles.css
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\6qya1t2u31-{0}-khy4lop6wu-khy4lop6wu.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\tfhfj4k1eg-{0}-bqjiyaj88i-bqjiyaj88i.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\gcsaolbtag-{0}-c2jlpeoesf-c2jlpeoesf.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\pxpaxthkac-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -126,7 +125,6 @@ c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\yw
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\dbkvu3f4vp-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\pjdcize820-{0}-dxx9fxp4il-dxx9fxp4il.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\w5tbtn94lt-{0}-jd9uben2k1-jd9uben2k1.gz
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\ugtxzqa44m-{0}-khv3u5hwcm-khv3u5hwcm.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\94kjzk0ehk-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\99i2l7bnzx-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\fqwgc6t4iu-{0}-c2oey78nd0-c2oey78nd0.gz
@@ -168,5 +166,10 @@ c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\BlazorApp1.pd
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\BlazorApp1.genruntimeconfig.cache
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\ref\BlazorApp1.dll
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\fe95vulehx-{0}-e4hbzpjloh-e4hbzpjloh.gz
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\e76fe7a2nx-{0}-e4hbzpjloh-e4hbzpjloh.gz
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Pages\Counter.razor.rz.scp.css
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\ugtxzqa44m-{0}-18edo1ehrb-18edo1ehrb.gz
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Pages\Cart.razor.rz.scp.css
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Pages\Serving.razor.rz.scp.css
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\fe95vulehx-{0}-5i94v89uah-5i94v89uah.gz
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\e76fe7a2nx-{0}-5i94v89uah-5i94v89uah.gz
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\6qya1t2u31-{0}-b8rpobjm07-b8rpobjm07.gz

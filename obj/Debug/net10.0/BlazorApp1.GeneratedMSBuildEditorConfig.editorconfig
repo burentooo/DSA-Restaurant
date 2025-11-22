@@ -26,32 +26,12 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Cart.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJ0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Customer.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Number.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOdW1iZXIucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Routes.razor]
@@ -74,6 +54,18 @@ build_metadata.AdditionalFiles.CssScope = b-5bndfk4shp
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmVjb25uZWN0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rp7b9a9cad
 
+[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-alrwdu2v4f
+
+[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-zx880jfvp6
+
 [c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-x0adpbawup
+
+[c:/Users/Bryan/Documents/BJ/c\#-blazor/BlazorApp1/Components/Pages/Serving.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZXJ2aW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-gmu55gpvd7

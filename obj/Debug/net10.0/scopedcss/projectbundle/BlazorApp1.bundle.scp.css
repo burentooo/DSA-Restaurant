@@ -7,6 +7,7 @@
 
 main[b-j65y7q72mt] {
     flex: 1;
+    overflow-x: hidden;
 }
 
 .sidebar[b-j65y7q72mt] {
@@ -71,7 +72,7 @@ main[b-j65y7q72mt] {
         width: 0;
     }
 
-    .top-row[b-j65y7q72mt], article[b-j65y7q72mt] {
+    .top-row[b-j65y7q72mt]{
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
@@ -85,7 +86,7 @@ main[b-j65y7q72mt] {
     box-sizing: border-box;
     display: none;
     left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -361,14 +362,16 @@ main[b-j65y7q72mt] {
         opacity: 0;
     }
 }
-/* /Components/Pages/Home.razor.rz.scp.css */
-.image-container[b-x0adpbawup] {
-    display: flex;
-    justify-content: center;
+/* /Components/Pages/Cart.razor.rz.scp.css */
+/* /Components/Pages/Counter.razor.rz.scp.css */
+.image-container[b-zx880jfvp6] {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     padding: 20px;
 }
 
-.item-card[b-x0adpbawup] {
+.item-card[b-zx880jfvp6] {
     width: 260px;
     background: #ffffff;
     border-radius: 15px;
@@ -377,33 +380,33 @@ main[b-j65y7q72mt] {
     transition: .2s;
 }
 
-.item-card:hover[b-x0adpbawup] {
+.item-card:hover[b-zx880jfvp6] {
     transform: scale(1.03);
 }
 
-.item-card img[b-x0adpbawup] {
+.item-card img[b-zx880jfvp6] {
     width: 100%;
     height: 160px;
     border-radius: 12px;
     object-fit: cover;
 }
 
-.item-info[b-x0adpbawup] {
+.item-info[b-zx880jfvp6] {
     margin-top: 12px;
 }
 
-.item-info h3[b-x0adpbawup] {
+.item-info h3[b-zx880jfvp6] {
     margin: 0 0 10px 0;
 }
 
-.qty-control[b-x0adpbawup] {
+.qty-control[b-zx880jfvp6] {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-.qty-control button[b-x0adpbawup] {
+.qty-control button[b-zx880jfvp6] {
     width: 32px;
     height: 32px;
     border: none;
@@ -415,11 +418,11 @@ main[b-j65y7q72mt] {
     transition: 0.2s;
 }
 
-.qty-control button:hover[b-x0adpbawup] {
+.qty-control button:hover[b-zx880jfvp6] {
     background: #ddd;
 }
 
-.add-btn[b-x0adpbawup] {
+.add-btn[b-zx880jfvp6] {
     width: 100%;
     padding: 10px;
     border: none;
@@ -432,6 +435,13 @@ main[b-j65y7q72mt] {
     font-size: 16px;
 }
 
-.add-btn:hover[b-x0adpbawup] {
+.add-btn:hover[b-zx880jfvp6] {
     background: #0065d4;
 }
+/* /Components/Pages/Home.razor.rz.scp.css */
+.background-image img[b-x0adpbawup] {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+/* /Components/Pages/Serving.razor.rz.scp.css */

@@ -1,20 +1,76 @@
 ﻿@page "/counter"
 @rendermode InteractiveServer
 
-<PageTitle></PageTitle>
+<PageTitle>Order</PageTitle>
 
-<h1>Counter</h1>
+<h1>Menu</h1>
 
-<p role="status">Current count: @currentCount</p>
+<div class="image-container">
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-<button class="btn btn-primary" @onclick="IncrementCount">Click This</button>
+    @foreach (Product item in Products)
+    {
+        <div class="item-card">
+            <img src="@item.Image" alt="@item.Name">
+
+            <div class="item-info">
+                <h3>@item.Name</h3>
+
+                <div class="qty-control">
+                    <button type="button" @onclick="() => Decrease(item)">-</button>
+                    <span>@item.Quantity</span>
+                    <button type="button" @onclick="() => Increase(item)">+</button>
+                </div>
+
+                <button type="button" class="add-btn" @onclick="() => PushItem(item)">ADD</button>
+            </div>
+        </div>
+    }
+
+</div>
+
+<h3>Stack Contents:</h3>
+<ul>
+    @foreach (var qty in myStack)
+    {
+        <li>@qty</li>
+    }
+</ul>
 
 @code {
-    private int currentCount = 0;
+    Stack<int> myStack = new Stack<int>();
 
-    private void IncrementCount()
+    void PushItem(Product item)
     {
-        currentCount++;
+        myStack.Push(item.Quantity);
+    }
+
+    private List<Product> Products = new List<Product>()
+    {
+        new Product { Name = "Chicken", Image = "images/Chicken.png", Quantity = 1 },
+        new Product { Name = "Burger", Image = "images/burgir.jpeg", Quantity = 1 },
+        new Product { Name = "Fries", Image = "images/fries.png", Quantity = 1 },
+        new Product { Name = "Spaghetti", Image = "images/spaghetti.jpg", Quantity = 1 },
+        new Product { Name = "Hotdog", Image = "images/hotdog.png", Quantity = 1 },
+        new Product { Name = "Burger Steak", Image = "images/burger-steak.png", Quantity = 1 },
+        new Product { Name = "Coke", Image = "images/coke.jpg", Quantity = 1 },
+        new Product { Name = "Sprite", Image = "images/sprite.png", Quantity = 1 }
+    };
+
+    private void Increase(Product p)
+    {
+        p.Quantity++;
+    }
+
+    private void Decrease(Product p)
+    {
+        if (p.Quantity > 1)
+            p.Quantity--;
+    }
+    public class Product
+    {
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public int Quantity { get; set; } = 1;
     }
 }
+
