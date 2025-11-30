@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Bryan\\Documents\\BJ\\c#-blazor\\BlazorApp1\\BlazorApp1.csproj": {}
+    "c:\\Users\\Admin\\Desktop\\DSA-Project\\DSA-Restaurant\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Bryan\\Documents\\BJ\\c#-blazor\\BlazorApp1\\BlazorApp1.csproj": {
+    "c:\\Users\\Admin\\Desktop\\DSA-Project\\DSA-Restaurant\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Bryan\\Documents\\BJ\\c#-blazor\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\DSA-Project\\DSA-Restaurant\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "c:\\Users\\Bryan\\Documents\\BJ\\c#-blazor\\BlazorApp1\\BlazorApp1.csproj",
-        "packagesPath": "C:\\Users\\Bryan\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Bryan\\Documents\\BJ\\c#-blazor\\BlazorApp1\\obj\\",
+        "projectPath": "c:\\Users\\Admin\\Desktop\\DSA-Project\\DSA-Restaurant\\BlazorApp1.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Admin\\Desktop\\DSA-Project\\DSA-Restaurant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
