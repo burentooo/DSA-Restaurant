@@ -1,7 +1,7 @@
 ﻿@page "/counter"
 @rendermode InteractiveServer
 
-<PageTitle>Order</PageTitle>
+<PageTitle>Counter</PageTitle>
 
 <h1>Menu</h1>
 
@@ -28,13 +28,13 @@
 
 </div>
 
-<h3>Stack Contents:</h3>
+@* <h3>Stack Contents:</h3>
 <ul>
     @foreach (var qty in myStack)
     {
         <li>@qty</li>
     }
-</ul>
+</ul> *@
 
 @code {
     Stack<int> myStack = new Stack<int>();

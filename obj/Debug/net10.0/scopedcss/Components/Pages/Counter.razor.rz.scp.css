@@ -60,7 +60,7 @@
     width: 100%;
     padding: 10px;
     border: none;
-    background: #0078ff;
+    background: #ffdd9d;
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -70,5 +70,5 @@
 }
 
 .add-btn:hover[b-zx880jfvp6] {
-    background: #0065d4;
+    background: #b1935d;
 }

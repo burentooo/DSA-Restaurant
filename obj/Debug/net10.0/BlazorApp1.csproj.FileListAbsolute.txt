@@ -170,6 +170,6 @@ c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Com
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\ugtxzqa44m-{0}-18edo1ehrb-18edo1ehrb.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Pages\Cart.razor.rz.scp.css
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\scopedcss\Components\Pages\Serving.razor.rz.scp.css
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\fe95vulehx-{0}-5i94v89uah-5i94v89uah.gz
-c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\e76fe7a2nx-{0}-5i94v89uah-5i94v89uah.gz
 c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\6qya1t2u31-{0}-b8rpobjm07-b8rpobjm07.gz
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\fe95vulehx-{0}-eg9uqnuet8-eg9uqnuet8.gz
+c:\Users\Bryan\Documents\BJ\c#-blazor\BlazorApp1\obj\Debug\net10.0\compressed\e76fe7a2nx-{0}-eg9uqnuet8-eg9uqnuet8.gz
