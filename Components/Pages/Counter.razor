@@ -1,17 +1,77 @@
 ﻿@page "/counter"
 @rendermode InteractiveServer
+@inject CartService CartService
 
 <PageTitle>Counter</PageTitle>
 
-<h1>Menu</h1>
+<h1 style="padding: 20px;">Menu</h1>
+
+<select @bind="SelectedCategory" class="category-dropdown">
+    <option value="All">All</option>
+    <option value="Meal">Meals</option>
+    <option value="Dessert">Desserts</option>
+    <option value="Drink">Drinks</option>
+</select>
 
 <div class="image-container">
+    @foreach (Product item in FilteredProducts)
+    {
+        @ItemCard(item)
+    }
+</div>
 
-    @foreach (Product item in Products)
+@code {
+    public string SelectedCategory { get; set; } = "All";
+
+    private IEnumerable<Product> FilteredProducts =>
+        SelectedCategory == "All"
+        ? Products
+        : Products.Where(p => p.Category == SelectedCategory);
+
+    Stack<int> myStack = new Stack<int>();
+
+    void PushItem(Product item)
+{
+    CartService.AddToCart(item.Name, item.Quantity, item.Image);
+    item.Quantity = 1;
+}
+
+    private List<Product> Products = new List<Product>()
+    {
+        new Product { Name = "Chicken", Image = "images/Chicken.png", Quantity = 1, Category = "Meal" },
+        new Product { Name = "Burger", Image = "images/burgir.jpeg", Quantity = 1, Category = "Meal" },
+        new Product { Name = "Fries", Image = "images/fries.png", Quantity = 1, Category = "Meal" },
+        new Product { Name = "Spaghetti", Image = "images/spaghetti.jpg", Quantity = 1, Category = "Meal" },
+        new Product { Name = "Hotdog", Image = "images/hotdog.png", Quantity = 1, Category = "Meal" },
+        new Product { Name = "Burger Steak", Image = "images/burger-steak.png", Quantity = 1, Category = "Meal" },
+
+        new Product { Name = "Halo halo", Image = "images/icecream.png", Quantity = 1, Category = "Dessert" },
+        new Product { Name = "Sundae", Image = "images/sundae.png", Quantity = 1, Category = "Dessert" },
+
+        new Product { Name = "Coke", Image = "images/coke.jpg", Quantity = 1, Category = "Drink" },
+        new Product { Name = "Sprite", Image = "images/sprite.png", Quantity = 1, Category = "Drink" }
+    };
+
+    private void Increase(Product p) => p.Quantity++;
+
+    private void Decrease(Product p)
+    {
+        if (p.Quantity > 1)
+            p.Quantity--;
+    }
+
+    public class Product
+    {
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public int Quantity { get; set; } = 1;
+        public string Category { get; set; }
+    }
+
+    RenderFragment ItemCard(Product item) => __builder =>
     {
         <div class="item-card">
-            <img src="@item.Image" alt="@item.Name">
-
+            <img src="@item.Image" alt="@item.Name" />
             <div class="item-info">
                 <h3>@item.Name</h3>
 
@@ -21,56 +81,9 @@
                     <button type="button" @onclick="() => Increase(item)">+</button>
                 </div>
 
-                <button type="button" class="add-btn" @onclick="() => PushItem(item)">ADD</button>
+                <button class="add-btn" @onclick="() => PushItem(item)">ADD</button>
             </div>
-        </div>
-    }
-
-</div>
-
-<h3>Stack Contents:</h3>
-<ul>
-    @foreach (var qty in myStack)
-    {
-        <li>@qty </li>
-    }
-</ul>
-
-@code {
-    Stack<int> myStack = new Stack<int>();
-
-    void PushItem(Product item)
-    {
-        myStack.Push(item.Quantity);
-    }
-
-    private List<Product> Products = new List<Product>()
-    {
-        new Product { Name = "Chicken", Image = "images/Chicken.png", Quantity = 1 },
-        new Product { Name = "Burger", Image = "images/burgir.jpeg", Quantity = 1 },
-        new Product { Name = "Fries", Image = "images/fries.png", Quantity = 1 },
-        new Product { Name = "Spaghetti", Image = "images/spaghetti.jpg", Quantity = 1 },
-        new Product { Name = "Hotdog", Image = "images/hotdog.png", Quantity = 1 },
-        new Product { Name = "Burger Steak", Image = "images/burger-steak.png", Quantity = 1 },
-        new Product { Name = "Coke", Image = "images/coke.jpg", Quantity = 1 },
-        new Product { Name = "Sprite", Image = "images/sprite.png", Quantity = 1 }
+        </div>;
     };
-
-    private void Increase(Product p)
-    {
-        p.Quantity++;
-    }
-
-    private void Decrease(Product p)
-    {
-        if (p.Quantity > 1)
-            p.Quantity--;
-    }
-    public class Product
-    {
-        public string Name { get; set; }
-        public string Image { get; set; }
-        public int Quantity { get; set; } = 1;
-    }
 }
 

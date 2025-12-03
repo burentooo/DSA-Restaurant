@@ -1,7 +1,33 @@
 ﻿@page "/cart"
 @rendermode InteractiveServer
+@inject CartService CartService
 
 <PageTitle>Cart</PageTitle>
 
-<h1>CART</h1>
-<p>Shows added items</p>
+<h1 class="cart-title" style="padding: 20px;">Your Cart</h1>
+
+@if (CartService.Items.Count == 0)
+{
+    <p class="empty-text">Your cart is empty.</p>
+}
+else
+{
+    <div class="cart-container">
+
+        @foreach (CartItem item in CartService.Items)
+        {
+            <div class="cart-item">
+                <img src="@item.Image" class="cart-img" />
+
+                <div class="cart-info">
+                    <h3>@item.Name</h3>
+                    <p>Quantity: @item.Quantity</p>
+                </div>
+
+                 <button class="add-btn" >Delete</button>
+            </div>
+        }
+
+        <button class="checkout-btn">CHECKOUT</button>
+    </div>
+}
