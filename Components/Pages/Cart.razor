@@ -1,7 +1,7 @@
 ﻿@page "/cart"
 @rendermode InteractiveServer
 @inject CartService CartService
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <PageTitle>Cart</PageTitle>
 
 <h1 class="cart-title" style="padding: 20px;">Your Cart</h1>
@@ -14,7 +14,7 @@ else
 {
     <div class="cart-container">
 
-        @foreach (CartItem item in CartService.Items)
+        @foreach (var item in CartService.Items)
         {
             <div class="cart-item">
                 <img src="@item.Image" class="cart-img" />
@@ -24,10 +24,17 @@ else
                     <p>Quantity: @item.Quantity</p>
                 </div>
 
-                 <button class="add-btn" >Delete</button>
+                <button class="add-btn" @onclick="() => DeleteItem(item)"><i class="fa fa-trash"></i></button>
             </div>
         }
 
         <button class="checkout-btn">CHECKOUT</button>
     </div>
+}
+
+@code {
+    void DeleteItem(CartItem item)
+    {
+        CartService.Items.Remove(item);
+    }
 }

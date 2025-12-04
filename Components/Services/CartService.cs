@@ -1,6 +1,6 @@
 public class CartService
 {
-    public List<CartItem> Items { get; set; } = new List<CartItem>();
+    public List<CartItem> Items = new List<CartItem>();
 
     public void AddToCart(string name, int quantity, string image)
     {
@@ -24,7 +24,7 @@ public class CartService
 
 public class CartItem
 {
-    public string Name { get; set; }
-    public int Quantity { get; set; }
-    public string Image { get; set; }
+    public string Name;
+    public int Quantity;
+    public string Image;
 }
