@@ -14,7 +14,7 @@ else
 {
     <div class="cart-container">
 
-        @foreach (var item in CartService.Items)
+        @foreach (CartItem item in CartService.Items)
         {
             <div class="cart-item">
                 <img src="@item.Image" class="cart-img" />
@@ -25,14 +25,22 @@ else
                 </div>
 
                 <button class="add-btn" @onclick="() => DeleteItem(item)"><i class="fa fa-trash"></i></button>
+
+                <span>Price: ₱@item.Price</span>
+                
             </div>
         }
-
+        <div class="total-price">
+    <h2>Total: ₱@TotalPrice</h2>
+</div>
+        
         <button class="checkout-btn">CHECKOUT</button>
     </div>
 }
 
 @code {
+    decimal TotalPrice =>
+    CartService.Items.Sum(item => item.Price * item.Quantity);
     void DeleteItem(CartItem item)
     {
         CartService.Items.Remove(item);
