@@ -8,6 +8,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddSingleton<CartService>();
+builder.Services.AddSingleton<ServingService>();
 
 var app = builder.Build();
 

@@ -26,17 +26,17 @@
     List<Product> Products = new List<Product>()
     {
         new Product { Name = "Chicken", Image = "images/Chicken.png", Quantity = 1,Price = 89, Category = "Meal" },
-        new Product { Name = "Burger", Image = "images/burgir.jpeg", Quantity = 1,Price = 89, Category = "Meal" },
-        new Product { Name = "Fries", Image = "images/fries.png", Quantity = 1,Price = 89, Category = "Meal" },
-        new Product { Name = "Spaghetti", Image = "images/spaghetti.jpg", Quantity = 1,Price = 89, Category = "Meal" },
-        new Product { Name = "Hotdog", Image = "images/hotdog.png", Quantity = 1,Price = 89, Category = "Meal" },
-        new Product { Name = "Burger Steak", Image = "images/burger-steak.png", Quantity = 1,Price = 89, Category = "Meal" },
+        new Product { Name = "Burger", Image = "images/burgir.jpeg", Quantity = 1,Price = 49, Category = "Meal" },
+        new Product { Name = "Fries", Image = "images/Fries.png", Quantity = 1,Price = 39, Category = "Meal" },
+        new Product { Name = "Spaghetti", Image = "images/spaghetti.jpg", Quantity = 1,Price = 96, Category = "Meal" },
+        new Product { Name = "Hotdog", Image = "images/hakdawg.jpg", Quantity = 1,Price = 85, Category = "Meal" },
+        new Product { Name = "Burger Steak", Image = "images/burger-steak.png", Quantity = 1,Price = 87, Category = "Meal" },
 
-        new Product { Name = "Halo halo", Image = "images/icecream.png", Quantity = 1,Price = 89, Category = "Dessert" },
-        new Product { Name = "Sundae", Image = "images/sundae.png", Quantity = 1,Price = 89, Category = "Dessert" },
+        new Product { Name = "Halo halo", Image = "images/icecream.png", Quantity = 1,Price = 90, Category = "Dessert" },
+        new Product { Name = "Sundae", Image = "images/sundae.png", Quantity = 1,Price = 35, Category = "Dessert" },
 
-        new Product { Name = "Coke", Image = "images/coke.jpg", Quantity = 1,Price = 89, Category = "Drink" },
-        new Product { Name = "Sprite", Image = "images/sprite.png", Quantity = 1,Price = 89, Category = "Drink" }
+        new Product { Name = "Coke", Image = "images/coke.jpg", Quantity = 1,Price = 25, Category = "Drink" },
+        new Product { Name = "Sprite", Image = "images/sprite.png", Quantity = 1,Price = 25, Category = "Drink" }
     };
 
     List<Product> GetFilteredProducts()
@@ -53,7 +53,9 @@
         item.Quantity = 1;
     }
 
-    void Increase(Product p) => p.Quantity++;
+    void Increase(Product p) {
+        p.Quantity++;
+    }
 
     void Decrease(Product p)
     {

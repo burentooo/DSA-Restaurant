@@ -1,9 +1,37 @@
 ﻿@page "/serving"
-@attribute [StreamRendering]
+@inject NavigationManager Nav
+@inject CartService CartService
 
-<PageTitle>Serving</PageTitle>
+<h1>Your Serving Number</h1>
 
-<h1>SERVING</h1>
+@if (servingNumber == 0)
+{
+    <h2>No serving number found.</h2>
+}
+else
+{
+    <h2>@servingNumber</h2>
+}
 
-<p>Shows servings number</p>
+<button @onclick="CartService.ClearCart">Done</button>
 
+@code {
+    int servingNumber;
+
+    protected override void OnInitialized()
+    {
+        var uri = Nav.ToAbsoluteUri(Nav.Uri);
+
+        var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+
+        if (query.TryGetValue("number", out var num))
+        {
+            servingNumber = int.Parse(num);
+        }
+        else
+        {
+            // Avoid showing 0
+            servingNumber = 0;
+        }
+    }
+}

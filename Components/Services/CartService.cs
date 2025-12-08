@@ -4,7 +4,10 @@ public class CartService
 
     // Read-only computed total (sum of price * quantity)
     public int Total => Items.Sum(i => i.Price * i.Quantity);
-
+    public void ClearCart()
+    {
+        Items.Clear();
+    }
     public void AddToCart(string name, int quantity, string image, int price)
     {
         var existing = Items.FirstOrDefault(x => x.Name == name);
@@ -25,6 +28,8 @@ public class CartService
         }
     }
 }
+
+
 
 public class CartItem
 {

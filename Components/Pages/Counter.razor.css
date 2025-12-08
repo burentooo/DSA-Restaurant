@@ -3,7 +3,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 80px;
+    padding-top: 20px;
+    padding-left: 80px;
+  padding-right: 80px;
 }
 
 .item-card {
@@ -77,7 +79,6 @@
 .category-dropdown {
     padding: 8px 12px;
     font-size: 16px;
-    margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #ccc;
 }

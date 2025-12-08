@@ -1,6 +1,10 @@
 ﻿@page "/cart"
 @rendermode InteractiveServer
+@inject NavigationManager Nav
 @inject CartService CartService
+@inject ServingService ServingService
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <PageTitle>Cart</PageTitle>
 
@@ -26,26 +30,78 @@ else
 
                 <button class="add-btn" @onclick="() => DeleteItem(item)"><i class="fa fa-trash"></i></button>
 
-                <span>Price: ₱@item.Price</span>
+                <span>Price: ₱@(item.Price * item.Quantity)</span>
                 
             </div>
         }
+
         <div class="total-price">
             <h2>Total: ₱@TotalPrice</h2>
         </div>
+
         <div class="payment-method">
         <h3>Payment method: </h3>
-            <input type="radio" id="cash" name="payment-cash" value="HTML">
-        <label for="payment">Cash</label><br>
+            <input type="radio" 
+           id="cash" 
+           name="paymentGroup" 
+           value="Cash" 
+           @onchange="@(() => selectedPayment = "Cash")" />
+    <label for="cash">Cash</label>
+    <br>
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div style="color: red; font-weight: bold; margin-top: 10px;">
+            ⚠️ @errorMessage
+        </div>
+    }
         </div>
         
-        <button class="checkout-btn">Place Order</button>
+        <button class="checkout-btn" @onclick="PlaceOrder">Place Order</button>
+        <button @onclick="CartService.ClearCart">Clear Cart</button>
+
+@if(showTicket)
+{
+    <div class="ticket-overlay">
+        <div class="ticket-box">
+            <h2>Serving Number</h2>
+            <h1>@servingNumber.ToString(format: "000")</h1>
+            <button class="close-btn" @onclick="CloseTicket">OK</button>
+        </div>
+    </div>
+}
+        
     </div>
 }
 
 @code {
-    decimal TotalPrice =>
-    CartService.Items.Sum(item => item.Price * item.Quantity);
+    decimal TotalPrice => CartService.Items.Sum(item => item.Price * item.Quantity);
+    bool showTicket = false;
+    int servingNumber = 0;
+
+    string selectedPayment = "";
+    string errorMessage = "";
+
+    void PlaceOrder()
+{
+    errorMessage = "";
+    if (string.IsNullOrEmpty(selectedPayment))
+        {
+            errorMessage = "You must select a payment method before placing an order.";
+            return; // STOP here. Do not process the order.
+        }
+    // IF we get here, they selected something.
+        // Proceed with your order logic...
+
+    servingNumber = ServingService.GetNextNumber();
+    showTicket = true;       // show popup
+}
+
+void CloseTicket()
+{
+    showTicket = false;      // hide popup
+    CartService.ClearCart(); // optional: clear cart after showing ticket
+    Nav.NavigateTo("/");
+}
     void DeleteItem(CartItem item)
     {
         CartService.Items.Remove(item);
