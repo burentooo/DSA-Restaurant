@@ -2,8 +2,6 @@ public class CartService
 {
     public List<CartItem> Items = new List<CartItem>();
 
-    // Read-only computed total (sum of price * quantity)
-    public int Total => Items.Sum(i => i.Price * i.Quantity);
     public void ClearCart()
     {
         Items.Clear();
@@ -18,7 +16,7 @@ public class CartService
         }
         else
         {
-            Items.Add(new CartItem
+            Items.Insert(0,new CartItem
             {
                 Name = name,
                 Quantity = quantity,
@@ -33,8 +31,8 @@ public class CartService
 
 public class CartItem
 {
-    public string Name;
-    public int Quantity;
-    public string Image;
+    public string Name = "";
+    public int Quantity = 1;
+    public string Image = "";
     public int Price;
 }

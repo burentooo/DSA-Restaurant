@@ -4,7 +4,6 @@
 @inject CartService CartService
 @inject ServingService ServingService
 
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <PageTitle>Cart</PageTitle>
 
@@ -87,19 +86,16 @@ else
     if (string.IsNullOrEmpty(selectedPayment))
         {
             errorMessage = "You must select a payment method before placing an order.";
-            return; // STOP here. Do not process the order.
+            return;
         }
-    // IF we get here, they selected something.
-        // Proceed with your order logic...
-
     servingNumber = ServingService.GetNextNumber();
-    showTicket = true;       // show popup
+    showTicket = true;//show ticket popup
 }
 
 void CloseTicket()
 {
-    showTicket = false;      // hide popup
-    CartService.ClearCart(); // optional: clear cart after showing ticket
+    showTicket = false;
+    CartService.ClearCart();// clear cart
     Nav.NavigateTo("/");
 }
     void DeleteItem(CartItem item)

@@ -14,15 +14,20 @@
 </select>
 
 <div class="image-container">
-    @foreach (var item in GetFilteredProducts())
-    {
+    @foreach (Product item in GetFilteredProducts())
+        {
         @ItemCard(item)
     }
 </div>
 
 @code {
     string SelectedCategory = "All";
-
+    List<Product> GetFilteredProducts() {
+        if (SelectedCategory == "All") {
+            return Products;
+        }
+        return Products.Where(p => p.Category == SelectedCategory).ToList();
+    }
     List<Product> Products = new List<Product>()
     {
         new Product { Name = "Chicken", Image = "images/Chicken.png", Quantity = 1,Price = 89, Category = "Meal" },
@@ -38,20 +43,6 @@
         new Product { Name = "Coke", Image = "images/coke.jpg", Quantity = 1,Price = 25, Category = "Drink" },
         new Product { Name = "Sprite", Image = "images/sprite.png", Quantity = 1,Price = 25, Category = "Drink" }
     };
-
-    List<Product> GetFilteredProducts()
-    {
-        if (SelectedCategory == "All")
-            return Products;
-
-        return Products.Where(p => p.Category == SelectedCategory).ToList();
-    }
-
-    void AddToCart(Product item)
-    {
-        CartService.AddToCart(item.Name, item.Quantity, item.Image,item.Price);
-        item.Quantity = 1;
-    }
 
     void Increase(Product p) {
         p.Quantity++;
@@ -82,13 +73,17 @@
             </div>
         </div>;
     };
-
+    void AddToCart(Product item)
+    {
+        CartService.AddToCart(item.Name, item.Quantity, item.Image,item.Price);
+        item.Quantity = 1;
+    }
     public class Product
     {
-        public string Name { get; set; }
-        public string Image { get; set; }
-        public int Quantity { get; set; }
-        public int Price { get; set; }
-        public string Category { get; set; }
+        public string Name = "";
+        public string Image = "";
+        public int Quantity = 1;
+        public int Price = 0;
+        public string Category = "All";
     }
 }
