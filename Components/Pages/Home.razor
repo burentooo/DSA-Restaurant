@@ -1,8 +1,20 @@
 ﻿@page "/"
 @rendermode InteractiveServer
+@inject NavigationManager Nav
+
 <PageTitle>Home</PageTitle>
 
 <div class="background-image">
-    <img src="images\background.png" alt="">
+    <img src="images/background.png" alt="">
+
+    <button class="order-btn" @onclick="GoToMenu">
+        ORDER NOW!
+    </button>
 </div>
 
+@code {
+    void GoToMenu()
+    {
+        Nav.NavigateTo("/counter");
+    }
+}
